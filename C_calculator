@@ -1,0 +1,42 @@
+//calculator in c
+#include <math.h>
+#include <stdio.h>
+
+int main() {
+
+    char op;
+    double first , second;
+
+    printf("CHOOSE OPERATION: ");
+
+    scanf("%c", &op);
+
+    printf("\nEnter first number: ");
+    scanf("%lf", &first);
+
+    printf("\nEnter second number: ");
+    scanf("%lf", &second);
+
+    if (op == '+') {
+        printf("\nResults: %.2lf\n", first + second);
+    }
+    else if (op == '-') {
+        printf("\nResults: %.2lf\n", first - second);
+    }
+    else if (op == '*') {
+        printf("\nResults: %.2lf\n", first * second);
+    }
+    else if (op == '/') {
+        printf("\nResults: %.2lf\n", first / second);
+    }
+    else if (op == '%') {
+        printf("\nResults: %.2d\n", (int) first % (int) second);
+    }
+    else if (op == '^') {
+        printf("\nResults: %.2lf\n", pow(first , second));
+    }
+    else {
+        printf("\nResults: ERROR\n");
+    }
+    return 0;
+}
