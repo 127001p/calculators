@@ -7,7 +7,7 @@ int main() {
     char op;
     double first , second;
 
-    printf("CHOOSE OPERATION: ");
+    printf("CHOOSE OPERATION:(+,-,*,/,%,^");
 
     scanf("%c", &op);
 
